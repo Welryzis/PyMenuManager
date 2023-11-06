@@ -14,7 +14,10 @@
 
 
 ## Installation
+Requirements: `Python >= 3.5`
+
 Note: For Linux use `python3` and `pip3`
+
 ```bash
 pip install git+https://github.com/Welryzis/PyMenuManager.git
 ```
@@ -22,7 +25,37 @@ pip install git+https://github.com/Welryzis/PyMenuManager.git
 
 ## Usage
 ```python
+from MenuManager import Menu  # Imports
+from MenuManager.exceptions import MenuError
+
+
+def add(x, y):  # First instance with args
+    print("Added", x, y)
+
+
+def remove(pk: int = 0):  # Second instance with kwargs
+    print("Removed", pk)
+    return "returned: removed"
+
+
+try:
+    # Menu object initialization
+    menu = Menu("Test Menu", "Test description for menu.")
+
+    # Creating menu option
+    menu.add_option("Add", add, 1, 2)
+    menu.add_option("Remove", remove, pk=3)
+    menu.add_option("Quit", quit)
+
+    # Show menu and print instance result
+    result = menu.show()
+    print("Result:", result)
+except MenuError:  # Exception handler
+    print("Menu error.")
 ```
+
+![screen_1](Files/screen_1.png)
+![screen_2](Files/screen_2.png)
 
 
 ## Features
@@ -56,7 +89,7 @@ If you encounter a bug, have a suggestion, or want to request a new feature, ple
 ### Making Changes
 If you want to work on an existing issue or implement a new feature, follow these steps:
 
-1. Fork the repository to your GitHub account.
+1. Fork the repository to your GitHub/GitLab account.
 2. Create a new branch for your changes: `git checkout -b feature/your-feature-name`.
 3. Make your changes, ensuring that your code follows our coding standards and conventions.
 4. Test your changes thoroughly.
