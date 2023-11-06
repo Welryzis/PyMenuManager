@@ -1,5 +1,5 @@
 # PyMenuManager
-**PyMenuManager** - is a simple Python package for create and manage console menus. Its provides easy-to-use interface for developers.
+**PyMenuManager** - is a simple Python package for creating and managing console menus. Its provides easy-to-use interface for developers.
 
 
 ## Table of Contents
