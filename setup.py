@@ -6,7 +6,7 @@ LICENSE = "Apache License, Version 2.0"
 DESCRIPTION = "Python package for creating and managing console menus."
 LONG_DESCRIPTION = ("PyMenuManager - is a simple Python package for create and manage console menus. "
                     "Its provides easy-to-use interface for developers.")
-VERSION = "1.0.0"
+VERSION = "1.0.1"
 
 
 setup(

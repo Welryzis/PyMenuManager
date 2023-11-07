@@ -49,7 +49,7 @@ class Menu:
 
     def _print_header(self):
         print(f"{BOLD_RED}{self.name}{RESET}")
-        print(f"  {CYAN}{self.desc}{RESET}", end="\n\n")
+        print(f"  {CYAN}{self.desc or ''}{RESET}", end="\n\n")
 
     def _print_options(self):
         for index, option in enumerate(self.data):
