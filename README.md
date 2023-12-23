@@ -14,9 +14,9 @@
 
 
 ## Installation
-Requirements: `Python >= 3.5`
+Requirements: `Tested on Python == 3.11.6 and 3.10.6`
 
-Note: For Linux use `python3` and `pip3`
+Note: For Linux use `python3`, `pip3` and `.sh`
 
 ```bash
 pip install git+https://github.com/Welryzis/PyMenuManager.git
